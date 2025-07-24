@@ -1,17 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: rgb(181, 201, 202);
 }
-.shear-white{
+
+.shear-white {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /* navbar */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,171 +22,324 @@ body{
     /* background-color: white; */
     margin-top: 20px;
 }
-.navbar img{
+
+.navbar img {
     height: 40px;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     list-style: none;
 }
-.navbar ul li{
+
+.navbar ul li {
     margin: 0 15px;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     text-decoration: none;
     color: black;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     align-items: center;
 }
-.home-text{
-   font-weight: bold;
+
+.home-text {
+    font-weight: bold;
     color: #252432;
 }
 
 /* banner section stert*/
-.bannersection{
+.bannersection {
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
-.banneer-text h1{
+
+.banneer-text h1 {
     font-weight: bold;
     font-size: 65px;
 }
-.banneer-text h5{
+
+.banneer-text h5 {
     font-weight: 400;
     font-size: 22px;
     color: #000000;
 }
-.banneer-titel{
+
+.banneer-titel {
     color: #E95A08;
 }
-.banner-img img{
+
+.banner-img img {
     width: 570px;
-    height:355px ;
+    height: 355px;
 }
+
 /* banner section end */
 /* Plants Section start */
 /* sub-titel */
-.sub-titel{
+.sub-titel {
     text-align: center;
     gap: 10px;
     margin-bottom: 50px;
 }
-.sub-titel h1{
+
+.sub-titel h1 {
     font-size: 50px;
     font-weight: bold;
     color: #252432;
 }
-.sub-titel h1 span{
+
+.sub-titel h1 span {
     color: #E95A08;
 }
-.sub-titel h5{
+
+.sub-titel h5 {
     font-size: 18px;
     font-weight: 400;
     color: #000000;
 }
+
 /* card-container */
-.card-container{
+.card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-  
+
 }
+
 /* card */
-.card{
+.card {
     height: 484px;
-    width:270px ;
+    width: 270px;
     /* gap: 30px; */
-   
+
 }
-.card img{
- height: 322px;
- width:270px;
- display: flex;
- align-items: center;
- justify-content: center;
- 
- /* margin-bottom: 30px; */
- padding-bottom: 30px;
+
+.card img {
+    height: 322px;
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* margin-bottom: 30px; */
+    padding-bottom: 30px;
 }
-.card h2{
+
+.card h2 {
     font-weight: 500;
     font-size: 22px;
     color: #111111;
     text-align: center;
 }
-.card h3{
+
+.card h3 {
     font-weight: bold;
     font-size: 22px;
     text-align: center;
     color: #111111;
     padding-bottom: 30px;
-    
+
 }
+
 /* shear buttun */
-.btn{
-   
+.btn {
+
     width: 100%;
     background-color: #E95A08;
     color: white;
     border: none;
     padding: 26px 60px;
     font-size: 16px;
-    font-weight:600;
+    font-weight: 600;
     cursor: pointer;
     /* text-transform: uppercase; */
     text-align: center;
     align-items: center;
-    /* display: inline-block; */    
- background-color: #E95A08;
-      color: white;
-      border: none;
-      /* padding: 26px 50px; */
-      font-size: 16px;
-      font-weight:600;
-      cursor: pointer;
-      /* text-transform: uppercase; */
-      text-align: center;
-      align-items: center;
-      /* display: inline-block; */
-} 
-
+    /* display: inline-block; */
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    /* padding: 26px 50px; */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    text-align: center;
+    align-items: center;
+    /* display: inline-block; */
+}
 
 /* plantes section end */
+/* Plants Lover Section stert */
+/* Plants Lover Section subtitel stert */
+.Plants-lover-sub-titel {
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.Plants-lover-sub-titel {
+    font-size: 50px;
+    font-weight: bold;
+    color: #252432;
+}
+
+.Plants-lover-sub-titel h1 span {
+    color: #E95A08;
+}
+
+.Plants-lover-sub-titel h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+/* Plants Lover Section subtitel end*/
+
+.plants-lover-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px 40px;
+}
+
+.left-deals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.deal-card-1 {
+    background-image: url("./assets/deal-bloom.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    height: 150px;
+    width: 300px;
+}
+.deal-card-1 p{
+font-weight: bold;
+font-size: 20px;
+}
+.deal-card-1 .btn-2{
+    font-weight: 700;
+    font-size: 16px;
+}
+.deal-card-2 {
+  background-image: url("./assets/deal-ana.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 14px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    height: 150px;
+    width: 300px;
+}
+.deal-card-2 p{
+font-weight: bold;
+font-size: 20px;
+}
+.deal-card-2 .btn-2{
+    font-weight: 700;
+    font-size: 16px;
+}
+.right-deal{
+    background-image: url("./assets/deal-zabo.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    height: 150px;
+    width: 300px;
+}
+.right-deal p{
+font-weight: bold;
+font-size: 40px;
+}
+.right-deal .btn-2{
+    font-weight: 600;
+    font-size: 28px;
+}
+.right-deal {
+    width: 600px;
+    height: 320px;
+}
+
+.overlay {
+     position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*Button 2 */
+.btn-2{
+    color: white;
+    border: none;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+
+/* Plants Lover Section end */
 
 
 /* mobile devices (0px - 767px) */
 @media (min-width: 0px) and (max-width: 767px) {
+
     /* navbar */
-    .active{
+    .active {
         display: none;
     }
+
     /* banner section */
-    .bannersection{
+    .bannersection {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         gap: 20px;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 392px;
-        height: 245px; 
-        
+        height: 245px;
+
     }
-    .banneer-text{
+
+    .banneer-text {
         width: 361px;
         height: 147px;
         gap: 14px;
-       
+
     }
-    /* card-container */
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-left: 20px;
+    }
+/* Plants Lover Section */
+.right-deal{
+     height: 150px;
+    width: 300px;
+    border-radius: 14px;
+}
+.right-deal p{
+font-weight: bold;
+font-size: 20px;
 }
 }
