@@ -64,15 +64,104 @@ body{
     width: 570px;
     height:355px ;
 }
-/* banner section stop */
+/* banner section end */
+/* Plants Section start */
+/* sub-titel */
+.sub-titel{
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.sub-titel h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #252432;
+}
+.sub-titel h1 span{
+    color: #E95A08;
+}
+.sub-titel h5{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+/* card-container */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  
+}
+/* card */
+.card{
+    height: 484px;
+    width:270px ;
+    /* gap: 30px; */
+   
+}
+.card img{
+ height: 322px;
+ width:270px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ 
+ /* margin-bottom: 30px; */
+ padding-bottom: 30px;
+}
+.card h2{
+    font-weight: 500;
+    font-size: 22px;
+    color: #111111;
+    text-align: center;
+}
+.card h3{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    color: #111111;
+    padding-bottom: 30px;
+    
+}
+/* shear buttun */
+.btn{
+   
+    width: 100%;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 26px 60px;
+    font-size: 16px;
+    font-weight:600;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    text-align: center;
+    align-items: center;
+    /* display: inline-block; */    
+ background-color: #E95A08;
+      color: white;
+      border: none;
+      /* padding: 26px 50px; */
+      font-size: 16px;
+      font-weight:600;
+      cursor: pointer;
+      /* text-transform: uppercase; */
+      text-align: center;
+      align-items: center;
+      /* display: inline-block; */
+} 
 
+
+/* plantes section end */
 
 
 /* mobile devices (0px - 767px) */
 @media (min-width: 0px) and (max-width: 767px) {
+    /* navbar */
     .active{
         display: none;
     }
+    /* banner section */
     .bannersection{
         flex-direction: column-reverse;
         align-items: center;
@@ -90,4 +179,11 @@ body{
         gap: 14px;
        
     }
+    /* card-container */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  
+}
 }
