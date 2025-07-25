@@ -439,7 +439,10 @@ body {
     color: #333;
     cursor: pointer;
       /* gap: 32px; */
-   
+}
+.footer-links li a {
+    text-decoration: none;
+    color: #333;
 }
 
 .footer-icons {
@@ -529,6 +532,18 @@ body {
         color: #FFFFFF;
         text-align: center;
     }
+    /* colorful-bunch-container */
+    .colorful-bunch-container {
+    background-image: url('./assets/news-letter-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;}
+
 
     /* footer section */
 
