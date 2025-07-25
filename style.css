@@ -481,6 +481,16 @@ body {
         height: 245px;
 
     }
+    .banneer-text h1{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .banneer-text h5 {
+        font-weight: 500;
+        font-size: 14px;
+        color: #000000;
+       
+    }
 
     /* .banneer-text {
         width: 361px;
