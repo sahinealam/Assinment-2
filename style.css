@@ -366,6 +366,9 @@ body {
 /* Join the colorful Bunch section start */
 .colorful-bunch-container {
     background-image: url('./assets/news-letter-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 70vh;
     display: flex;
     align-items: center;
