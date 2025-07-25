@@ -412,9 +412,7 @@ body {
 
 }
 
-.footer-left {
-    /* max-width: 300px; */
-}
+
 
 .footer-left .logo {
     width: 120px;
@@ -486,12 +484,28 @@ body {
     } */
     /* card -container */
     .card-container {
+    
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         margin-left: 20px;
     }
-
+    .card img {
+        width: 100%;
+        height: 100%;
+    }
+  .card {
+       height: 70%;
+        width: 70%;
+        
+        /* margin-bottom: 40px; */
+    } 
+      .btn {
+        height: auto;
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 14px;
+    }
     /* Plants Lover Section */
     .right-dtial {
         height: 150px;
