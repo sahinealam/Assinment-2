@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(181, 201, 202);
+    /* background-color: rgb(181, 201, 202); */
 }
 
 .shear-white {
@@ -104,18 +104,21 @@ body {
 }
 
 /* card-container */
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
+    
 
 }
 
 /* card */
 .card {
     height: 484px;
-    width: 270px;
-    /* gap: 30px; */
+    width: 270px;    
+    margin-bottom: 70px;
+    
 
 }
 
@@ -157,23 +160,77 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    /* text-transform: uppercase; */
     text-align: center;
     align-items: center;
-    /* display: inline-block; */
-    background-color: #E95A08;
-    color: white;
-    border: none;
-    /* padding: 26px 50px; */
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    /* text-transform: uppercase; */
-    text-align: center;
-    align-items: center;
-    /* display: inline-block; */
 }
+/* Flower & Plants Lover section start */
+.plants-container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+    
+    }
 
+    .plants-left-section {
+      
+      flex: 1;
+      position: relative;
+    }
+
+    .plants-left-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+/* .badge {
+    position: relative;
+} */
+
+.badge img {
+    height: 286px;
+    width: 286px;
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    transform: translateY(-60%);
+  
+}
+    /* .badge {
+       
+      position: absolute;
+      top: 20px;
+      left: 50%;
+    transform: translateY(-20%);
+      /* width: 120px; */
+    /* } */
+
+    .plants-right-section {
+      flex: 1;
+      padding: 40px 30px;
+      /* background-color: #f3f4f8; */
+    }
+
+    .plants-right-section h2 {
+        font-weight: bold;
+      font-size: 50px;
+      /* margin-bottom: 20px; */
+      /* font-weight: bold; */
+    }
+
+    .plants-right-section ul {
+      padding-left: 20px;
+      gap: 20px;
+    }
+
+    .plants-right-section li {
+      
+      font-weight: regular;
+        font-size: 22px;
+        color: #000000;
+        
+    }
+/* Flower & Plants Lover section end */
 /* plantes section end */
 /* Plants Lover Section stert */
 /* Plants Lover Section subtitel stert */
@@ -198,6 +255,7 @@ body {
     font-weight: 400;
     color: #000000;
 }
+
 /* Plants Lover Section subtitel end*/
 
 .plants-lover-container {
@@ -208,13 +266,13 @@ body {
     padding: 0 20px 40px;
 }
 
-.left-deals {
+.left-dtial {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.deal-card-1 {
+.dtial-card-1 {
     background-image: url("./assets/deal-bloom.png");
     background-size: cover;
     background-position: center;
@@ -225,16 +283,19 @@ body {
     height: 150px;
     width: 300px;
 }
-.deal-card-1 p{
-font-weight: bold;
-font-size: 20px;
+
+.dtial-card-1 p {
+    font-weight: bold;
+    font-size: 20px;
 }
-.deal-card-1 .btn-2{
+
+.dtial-card-1 .btn-2 {
     font-weight: 700;
     font-size: 16px;
 }
-.deal-card-2 {
-  background-image: url("./assets/deal-ana.png");
+
+.dtial-card-2 {
+    background-image: url("./assets/deal-ana.png");
     background-size: cover;
     background-position: center;
     border-radius: 14px;
@@ -244,15 +305,18 @@ font-size: 20px;
     height: 150px;
     width: 300px;
 }
-.deal-card-2 p{
-font-weight: bold;
-font-size: 20px;
+
+.dtial-card-2 p {
+    font-weight: bold;
+    font-size: 20px;
 }
-.deal-card-2 .btn-2{
+
+.dtial-card-2 .btn-2 {
     font-weight: 700;
     font-size: 16px;
 }
-.right-deal{
+
+.right-dtial {
     background-image: url("./assets/deal-zabo.png");
     background-size: cover;
     background-position: center;
@@ -263,21 +327,24 @@ font-size: 20px;
     height: 150px;
     width: 300px;
 }
-.right-deal p{
-font-weight: bold;
-font-size: 40px;
+
+.right-dtial p {
+    font-weight: bold;
+    font-size: 40px;
 }
-.right-deal .btn-2{
+
+.right-dtial .btn-2 {
     font-weight: 600;
     font-size: 28px;
 }
-.right-deal {
+
+.right-dtial {
     width: 600px;
     height: 320px;
 }
 
 .overlay {
-     position: absolute;
+    position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -285,17 +352,108 @@ font-size: 40px;
     align-items: center;
     justify-content: center;
 }
+
 /*Button 2 */
-.btn-2{
+.btn-2 {
     color: white;
     border: none;
     text-decoration: underline;
     background-color: transparent;
 }
 
-
 /* Plants Lover Section end */
 
+/* Join the colorful Bunch section start */
+.colorful-bunch-container {
+    background-image: url('./assets/news-letter-bg.png');
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.colorful-bunch h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #FFFFFF;
+}
+
+.subscribe-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.subscribe-box input {
+    padding: 12px;
+    width: 300px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-box button {
+    padding: 12px 20px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* footer section start */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    /* background-color: #f8f8f8; */
+    /* flex-wrap: wrap; */
+
+}
+
+.footer-left {
+    /* max-width: 300px; */
+}
+
+.footer-left .logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 32px;
+
+}
+
+.footer-links ul {
+    list-style: none;
+  
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+    color: #333;
+    cursor: pointer;
+      /* gap: 32px; */
+   
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.footer-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Join the colorful Bunch section end */
 
 /* mobile devices (0px - 767px) */
 @media (min-width: 0px) and (max-width: 767px) {
@@ -311,6 +469,7 @@ font-size: 40px;
         align-items: center;
         justify-content: center;
         gap: 20px;
+
     }
 
     .banner-img img {
@@ -319,27 +478,73 @@ font-size: 40px;
 
     }
 
-    .banneer-text {
+    /* .banneer-text {
         width: 361px;
         height: 147px;
         gap: 14px;
 
-    }
-
+    } */
+    /* card -container */
     .card-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         margin-left: 20px;
     }
-/* Plants Lover Section */
-.right-deal{
-     height: 150px;
-    width: 300px;
-    border-radius: 14px;
+
+    /* Plants Lover Section */
+    .right-dtial {
+        height: 150px;
+        width: 300px;
+        border-radius: 14px;
+    }
+
+    .right-dtial p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .right-dtial .btn-2 {
+        font-weight: 600;
+        font-size: 17px;
+    }
+    /* Plants Section */
+    .plants-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+    }
+/* plants badge */
+.badge{
+    display: none;
 }
-.right-deal p{
-font-weight: bold;
-font-size: 20px;
-}
+    /* Join the colorful Bunch  */
+    .colorful-bunch h1 {
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    /* footer section */
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 40px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+       padding-left: 20px;
+
+    }
+
+
 }
